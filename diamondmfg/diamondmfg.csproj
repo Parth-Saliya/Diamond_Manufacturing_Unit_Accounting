@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43493F53-5170-439B-9C96-C1AADBB48F16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>diamondmfg</RootNamespace>
+    <AssemblyName>diamondmfg</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassUserRights.cs" />
+    <Compile Include="ComNameDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComNameDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="diamDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>diamDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAssortmentMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAssortmentMaster.Designer.cs">
+      <DependentUpon>FrmAssortmentMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompanyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompanyMaster.Designer.cs">
+      <DependentUpon>FrmCompanyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDefaultCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDefaultCom.Designer.cs">
+      <DependentUpon>FrmDefaultCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdepartmentmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdepartmentmaster.Designer.cs">
+      <DependentUpon>frmdepartmentmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGroupMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGroupMaster.Designer.cs">
+      <DependentUpon>FrmGroupMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPurityMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurityMaster.Designer.cs">
+      <DependentUpon>FrmPurityMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmshademaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmshademaster.Designer.cs">
+      <DependentUpon>frmshademaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmshapemaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmshapemaster.Designer.cs">
+      <DependentUpon>frmshapemaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserRights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserRights.Designer.cs">
+      <DependentUpon>FrmUserRights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue For Cleaving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue For Cleaving.Designer.cs">
+      <DependentUpon>Issue For Cleaving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueForProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueForProcess.Designer.cs">
+      <DependentUpon>IssueForProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kapan Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kapan Master.Designer.cs">
+      <DependentUpon>Kapan Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KapanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KapanDetail.Designer.cs">
+      <DependentUpon>KapanDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Party Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Party Master.Designer.cs">
+      <DependentUpon>Party Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process Master.Designer.cs">
+      <DependentUpon>Process Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoughAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoughAvailable.Designer.cs">
+      <DependentUpon>RoughAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoughIssue7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoughIssue7.Designer.cs">
+      <DependentUpon>RoughIssue7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User master.Designer.cs">
+      <DependentUpon>User master.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAssortmentMaster.resx">
+      <DependentUpon>FrmAssortmentMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompanyMaster.resx">
+      <DependentUpon>FrmCompanyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDefaultCom.resx">
+      <DependentUpon>FrmDefaultCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdepartmentmaster.resx">
+      <DependentUpon>frmdepartmentmaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGroupMaster.resx">
+      <DependentUpon>FrmGroupMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurityMaster.resx">
+      <DependentUpon>FrmPurityMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmshademaster.resx">
+      <DependentUpon>frmshademaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmshapemaster.resx">
+      <DependentUpon>frmshapemaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserRights.resx">
+      <DependentUpon>FrmUserRights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue For Cleaving.resx">
+      <DependentUpon>Issue For Cleaving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueForProcess.resx">
+      <DependentUpon>IssueForProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kapan Master.resx">
+      <DependentUpon>Kapan Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Party Master.resx">
+      <DependentUpon>Party Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process Master.resx">
+      <DependentUpon>Process Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RoughAvailable.resx">
+      <DependentUpon>RoughAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoughIssue7.resx">
+      <DependentUpon>RoughIssue7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User master.resx">
+      <DependentUpon>User master.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ComNameDataSet.xsc">
+      <DependentUpon>ComNameDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ComNameDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComNameDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ComNameDataSet.xss">
+      <DependentUpon>ComNameDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet.xsc">
+      <DependentUpon>diamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet.xss">
+      <DependentUpon>diamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet1.xsc">
+      <DependentUpon>diamDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet1.xss">
+      <DependentUpon>diamDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet2.xsc">
+      <DependentUpon>diamDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet2.xss">
+      <DependentUpon>diamDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet3.xsc">
+      <DependentUpon>diamDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet3.xss">
+      <DependentUpon>diamDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet4.xsc">
+      <DependentUpon>diamDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet4.xss">
+      <DependentUpon>diamDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet5.xsc">
+      <DependentUpon>diamDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet5.xss">
+      <DependentUpon>diamDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet6.xsc">
+      <DependentUpon>diamDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="diamDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>diamDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="diamDataSet6.xss">
+      <DependentUpon>diamDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
